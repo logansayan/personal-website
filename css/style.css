@@ -43,7 +43,7 @@ p {
   font-weight: normal;
   font-family: 'Courier New', sans-serif;
 }
-.description {
+.description, .intro {
   font-family: 'Comfortaa', sans-serif;
   font-size: 100%;
   color: black;
@@ -155,3 +155,77 @@ hr {
   width: 10rem;
 }
 
+/* PHONE SETUP */
+@media only screen and (max-width: 700px) {
+  .top-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .profile-picture {
+    width: 50%;
+  }
+  .mountain {
+    width: 100%;
+    padding-top: 25%;
+    padding: 0;
+  }
+  .top-cloud, .bottom-cloud {
+    width: 20%;
+  }
+  .top-cloud {
+    left: 73%;
+  }
+  .bottom-cloud {
+    top: 42%;
+    left: 8%;
+  }
+  h1 {
+    font-size: 3rem ;
+    padding: 0;
+    margin: 0;
+    margin-top: 10%;
+  }
+  .subheading {
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .intro {
+    width: 80%;
+  }
+  .skill-row {
+    width: 80%;
+    text-align: center;
+  }
+  .python-img, .web-dev-img {
+    float: none;
+  }
+  .description {
+    width: 95%;
+    margin: 0 auto;
+  }
+  h3 {
+    text-align: center;
+    font-size: 117%;
+  }
+  h2 {
+    font-size: 180%;
+  }
+  .contact-btn {
+    width: 30%;
+    margin-top: 2%;
+    margin-bottom: -3%;
+    font-size: 83%;
+  }
+  .contact-title {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .contact-btn {
+    font-size: 70%;
+  }
+}
