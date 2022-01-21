@@ -3,12 +3,12 @@
 body {
   margin: 0;
   text-align: center;
+  box-sizing: border-box;
 }
 h1 {
-  margin-top: 7% auto 0 auto;
   font-family: 'Sacramento', sans-serif;
   font-size: 5rem;
-  /* font-weight: lighter; */
+  font-weight: lighter;
   color: #edf5e1;
 }
 h2 {
@@ -16,24 +16,36 @@ h2 {
   font-size: 200%;
   color: #05386b;
   font-weight: 100;
-  padding-bottom: 1%;
 }
-h3 {
+
+.profile, .projects, .skills {
+  padding: 5%;
+}
+
+.projects h3 {
+  padding: 2%;
+}
+
+.contact-me {
+  padding: 3%;
+}
+
+.section-heading {
   font-family: 'Comfortaa', sans-serif;
   text-align: left;
   color: #05386b;
   font-weight: lighter;
 }
-a {
+.footer-link {
   color: #8ee4af;
   font-family: 'Comfortaa', sans-serif;
   padding: 7px;
   text-decoration: none;
 }
-a:hover {
+.footer-link:hover {
   color: white;
 }
-p {
+.description {
   font-size: 2rem;
   font-family: 'Indie Flower', sans-serif;
   color: white;
@@ -42,6 +54,7 @@ p {
   color: #edf5e1;
   font-weight: normal;
   font-family: 'Courier New', sans-serif;
+  font-size: 1.5rem;
 }
 .description, .intro {
   font-family: 'Comfortaa', sans-serif;
@@ -60,7 +73,8 @@ p {
   margin-bottom: 3%;
 } 
 .middle-container {
-  margin: 5% 0;
+  margin: 0 auto;
+  width: 80%;
 }
 .bottom-container {
   background-color: #379683;
@@ -68,18 +82,11 @@ p {
   padding-top: 3%;
   padding-bottom: 3%;
 }
-.python-img {
+.python-img, .web-dev-img {
   width: 9rem;
-  border-radius: 50%;
+  border-radius: 10%;
   float: left;
-  margin-right: 1%;
-}
-.web-dev-img {
-  width: 9rem;
-  border-radius: 50%;
-  float: right;
-  margin-right: 1%;
-
+  margin-right: 3%;
 }
 .skill-row {
   width: 50%;
@@ -87,11 +94,24 @@ p {
   text-align: left;
 }
 
+i:hover {
+  color: #5cdb95;
+}
+
+.proj-heading {
+  font-family: 'Comfortaa', sans-serif;
+  margin: 0 auto;
+  color: #05386b;
+  font-weight: lighter;
+  text-decoration: none;
+  font-size: 1.17em;
+}
+
 .pro {
   text-decoration: underline;
 }
 .intro {
-  width: 25%;
+  width: 30%;
   margin: auto;
 }
 .bottom-cloud {
@@ -119,13 +139,13 @@ hr {
 .contact-btn {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #FFFFFF;
-  font-family: 'Comfortaa', sans-serif;
+  font-family: monospace;
   font-size: 24px;
   font-weight: 100;
   padding: 10px;
-  background-color: #05386B;
+  background-color: #379683;
   -webkit-box-shadow: 1px 1px 20px 0 #000000;
   -moz-box-shadow: 1px 1px 20px 0 #000000;
   box-shadow: 1px 1px 20px 0 #000000;
@@ -134,6 +154,7 @@ hr {
   display: inline-block;
   cursor: pointer;
   text-align: center;
+  margin-top: 4%;
 }
 
 .contact-btn:hover {
@@ -145,17 +166,39 @@ hr {
   background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  border-radius: 5px;
   text-decoration: none;
+  border-radius: 10px;
 }
+
 .contact-title {
   text-align: center;
+  line-height: 2rem;
 }
 .profile-picture {
   width: 10rem;
 }
 
 /* PHONE SETUP */
+
+@media only screen and (max-width: 1422px) {
+  .intro {
+    width: 60%;
+  }
+
+  .skill-row {
+    width: 80%;
+    text-align: center;
+  }
+
+  .python-img, .web-dev-img {
+    float: none;
+  }
+
+  .section-heading {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .top-container {
     width: 100%;
@@ -187,35 +230,20 @@ hr {
   }
   .subheading {
     font-size: 1.1rem;
-    padding: 0;
-    margin: 0;
   }
   .intro {
     width: 80%;
   }
-  .skill-row {
-    width: 80%;
-    text-align: center;
-  }
-  .python-img, .web-dev-img {
-    float: none;
-  }
+
   .description {
     width: 95%;
-    margin: 0 auto;
   }
-  h3 {
+  .section-heading {
     text-align: center;
     font-size: 117%;
   }
   h2 {
     font-size: 180%;
-  }
-  .contact-btn {
-    width: 30%;
-    margin-top: 2%;
-    margin-bottom: -3%;
-    font-size: 83%;
   }
   .contact-title {
     width: 80%;
@@ -227,5 +255,8 @@ hr {
 @media only screen and (max-width: 300px) {
   .contact-btn {
     font-size: 70%;
+  }
+  .description {
+    padding: 3%;
   }
 }
